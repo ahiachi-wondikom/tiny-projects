@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Random Number Generator</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Project 07: Random Number Generator</h1>
+
+			<div class="input-group">
+				<div class="input-wrapper">
+					<label for="min-input">Minimum:</label>
+					<input type="number" id="min-input" placeholder="e.g., 1" value="1" />
+				</div>
+
+				<div class="input-wrapper">
+					<label for="max-input">Maximum:</label>
+					<input
+						type="number"
+						id="max-input"
+						placeholder="e.g., 100"
+						value="100"
+					/>
+				</div>
+			</div>
+
+			<button id="generate-btn">🎲 Generate Random Number</button>
+
+			<div id="result" class="result">
+				<p class="result-label">Result:</p>
+				<p id="result-number" class="result-number">?</p>
+			</div>
+
+			<a href="../index.html" class="back-link">← Back to Projects</a>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
