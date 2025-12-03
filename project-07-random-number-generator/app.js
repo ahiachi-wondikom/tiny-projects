@@ -4,7 +4,6 @@ const generateBtn = document.getElementById('generate-btn') // ? Select generate
 const resultNumber = document.getElementById('result-number') // ? Select result display element
 
 generateBtn.addEventListener('click', () => {
-	// Get values from inputs
 	const min = Number(minInput.value)
 	const max = Number(maxInput.value)
 
