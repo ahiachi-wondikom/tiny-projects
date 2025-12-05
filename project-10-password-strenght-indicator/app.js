@@ -5,7 +5,6 @@ const toggleBtn = document.getElementById('toggle-btn')
 
 // Step 2: Function to check password strength
 function checkPasswordStrength() {
-	// Get what user typed
 	const password = passwordInput.value
 	const passwordLength = password.length
 
