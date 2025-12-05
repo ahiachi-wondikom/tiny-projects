@@ -12,7 +12,7 @@ function calculate(operation) {
 	const number1 = Number(num1Input.value)
 	const number2 = Number(num2Input.value)
 
-	if (!isNaN(number1) || !isNaN(number2)) {
+	if (isNaN(number1) || isNaN(number2)) {
 		resultDisplay.textContent = 'Please enter a valid number'
 		return
 	}
@@ -27,7 +27,7 @@ function calculate(operation) {
 		result = number1 * number2
 	} else if (operation === 'divide') {
 		if (number2 === '0') {
-			result.textContent = 'cannot divide by zero'
+			resultDisplay.textContent = 'cannot divide by zero'
 			return
 		}
 		result = number1 / number2
